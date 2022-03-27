@@ -1,0 +1,6 @@
+#ifndef LAIN_TYPE_INTEGER_8_SIGNED_TYPEDEF_H
+#define LAIN_TYPE_INTEGER_8_SIGNED_TYPEDEF_H
+
+typedef signed char lain_type_integer_8_signed;
+
+#endif
