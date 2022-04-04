@@ -50,23 +50,23 @@ ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.addit
 $(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.division.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.division.h
 ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.division.c
 
-$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.equality.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.equality.h
-ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.equality.c
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.equalTo.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.equalTo.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.equalTo.c
 
 $(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThan.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThan.h
 ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThan.c
 
-$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEquality.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEquality.h
-ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEquality.c
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.c
 
-$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.inequality.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.inequality.h
-ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.inequality.c
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.notEqualTo.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.notEqualTo.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.notEqualTo.c
 
 $(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThan.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThan.h
 ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThan.c
 
-$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEquality.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEquality.h
-ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEquality.c
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.c
 
 $(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.modulo.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.modulo.h
 ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.modulo.c
@@ -77,6 +77,27 @@ ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.multi
 $(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.subtraction.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.subtraction.h
 ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.subtraction.c
 
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.logicalAnd.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.logicalAnd.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.logicalAnd.c
+
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.logicalOr.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.logicalOr.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.logicalOr.c
+
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.c
+
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.c
+
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseOr.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseOr.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseOr.c
+
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.c
+
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.c
+
 $(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.addition.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.addition.c
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
 ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.addition.o
@@ -85,29 +106,29 @@ $(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.division.o:$(SOURC
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
 ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.division.o
 
-$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.equality.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.equality.c
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.equalTo.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.equalTo.c
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
-ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.equality.o
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.equalTo.o
 
 $(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThan.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThan.c
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
 ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThan.o
 
-$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEquality.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEquality.c
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.c
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
-ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEquality.o
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.o
 
-$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.inequality.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.inequality.c
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.notEqualTo.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.notEqualTo.c
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
-ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.inequality.o
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.notEqualTo.o
 
 $(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.lessThan.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThan.c
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
 ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.lessThan.o
 
-$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEquality.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEquality.c
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.c
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
-ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEquality.o
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.o
 
 $(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.modulo.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.modulo.c
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
@@ -120,5 +141,33 @@ ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.multi
 $(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.subtraction.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.subtraction.c
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
 ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.subtraction.o
+
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.logicalAnd.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.logicalAnd.c
+	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.logicalAnd.o
+
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.logicalOr.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.logicalOr.c
+	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.logicalOr.o
+
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.c
+	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.o
+
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.c
+	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.o
+
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseOr.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseOr.c
+	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseOr.o
+
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.c
+	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.o
+
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.c
+	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.o
 
 all: $(ALL_TARGETS)
