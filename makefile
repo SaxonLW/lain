@@ -44,6 +44,13 @@ ALL_TARGETS+=$(INCLUDE_DIR)/lain.type.integer.8.signed.typedef.h
 $(INCLUDE_DIR)/lain.type.integer.8.unsigned.typedef.h:
 ALL_TARGETS+=$(INCLUDE_DIR)/lain.type.integer.8.unsigned.typedef.h
 
+$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.byPointer.typedef.h:
+ALL_TARGETS+=$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.byPointer.typedef.h
+
+$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.byPointer.h:
+	$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.byPointer.typedef.h
+ALL_TARGETS+=$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.byPointer.h
+
 $(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.addition.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.addition.h
 ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.addition.c
 
@@ -97,6 +104,9 @@ ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwi
 
 $(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.h
 ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.c
+
+$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.byPointer.c:$(INCLUDE_DIR)/lain.type.integer.8.signed.operation.comparison.byPointer.h
+ALL_TARGETS+=$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.byPointer.c
 
 $(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.addition.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.addition.c
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
@@ -169,5 +179,9 @@ ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwi
 $(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.c
 	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
 ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.o
+
+$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.byPointer.o:$(SOURCE_DIR)/lain.type.integer.8.signed.operation.comparison.byPointer.c
+	$(CC) $(INCLUDE_PATHS) $(CC_FLAGS) $(CC_OBJECT_FLAG) -o $@ $^
+ALL_TARGETS+=$(OBJECT_DIR)/lain.type.integer.8.signed.operation.comparison.byPointer.o
 
 all: $(ALL_TARGETS)
