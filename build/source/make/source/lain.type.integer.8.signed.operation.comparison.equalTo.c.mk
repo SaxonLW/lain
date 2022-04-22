@@ -1,0 +1,2 @@
+$(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.equalTo.c:$(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.equalTo.h
+SOURCE_TARGETS+=$(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.equalTo.c

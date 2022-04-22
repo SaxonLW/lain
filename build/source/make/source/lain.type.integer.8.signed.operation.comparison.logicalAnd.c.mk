@@ -1,0 +1,2 @@
+$(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.logicalAnd.c:$(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.logicalAnd.h
+SOURCE_TARGETS+=$(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.logicalAnd.c

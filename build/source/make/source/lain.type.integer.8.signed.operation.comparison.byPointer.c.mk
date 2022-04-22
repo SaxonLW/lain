@@ -1,0 +1,2 @@
+$(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.byPointer.c:$(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.byPointer.h
+SOURCE_TARGETS+=$(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.byPointer.c

@@ -1,0 +1,2 @@
+$(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseAnd.c:$(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseAnd.h
+SOURCE_TARGETS+=$(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseAnd.c
