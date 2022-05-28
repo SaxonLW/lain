@@ -1,8 +1,0 @@
-#ifndef LAIN_TYPE_INTERGER_8_SIGNED_OPERATION_COMPARISON_BYTHREAD_ARGUMENT_NEW_H
-#define LAIN_TYPE_INTERGER_8_SIGNED_OPERATION_COMPARISON_BYTHREAD_ARGUMENT_NEW_H
-
-#include "lain.type.integer.8.signed.operation.comparison.byThread.argument.new.typedef.h"
-lain_type_integer_8_signed_operation_comparison_byThread_argument_new_type lain_type_integer_8_signed_operation_comparison_byThread_argument_new;
-
-
-#endif

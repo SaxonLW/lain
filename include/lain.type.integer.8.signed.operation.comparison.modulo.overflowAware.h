@@ -1,0 +1,8 @@
+#ifndef LAIN_TYPE_INTERGER_8_SIGNED_OPERATION_COMPARISON_MODULO_OVERFLOWAWARE_H
+#define LAIN_TYPE_INTERGER_8_SIGNED_OPERATION_COMPARISON_MODULO_OVERFLOWAWARE_H
+
+#include "lain.type.integer.8.signed.operation..overflowAware.typedef.h"
+
+lain_type_integer_8_signed_operation__overflowAware lain_type_integer_8_signed_operation_comparison_modulo_overflowAware;
+
+#endif
