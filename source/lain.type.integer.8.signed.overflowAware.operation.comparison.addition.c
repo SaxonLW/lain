@@ -1,7 +1,7 @@
 #include "lain.type.integer.8.signed.overflowAware.operation.comparison.addition.h"
 #include "lain.type.integer.8.signed.define.h"
 #include "lain.type.integer.8.signed.overflowAware.operation.construct.h"
-#include "lain.type.integer.8.signed.overflowAware.operation.map.signAbsolute.h"
+#include "lain.type.integer.8.signed.operation.map.signAbsolute.h"
 
 lain_type_integer_8_signed_overflowAware lain_type_integer_8_signed_overflowAware_operation_comparison_addition(lain_type_integer_8_signed left, lain_type_integer_8_signed right){
     lain_type_integer_8_signed_overflowAware ret;
@@ -20,6 +20,7 @@ lain_type_integer_8_signed_overflowAware lain_type_integer_8_signed_overflowAwar
             } else {
                 ret = lain_type_integer_8_signed_overflowAware_operation_construct(LAIN_TYPE_INTEGER_8_SIGNED_DEFINE_BOUNDRY_LOW, right-(LAIN_TYPE_INTEGER_8_SIGNED_DEFINE_BOUNDRY_LOW-left));
             }
+            break;
         case 0:
             ret = lain_type_integer_8_signed_overflowAware_operation_construct(right, (lain_type_integer_8_signed)0);
             break;

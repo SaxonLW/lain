@@ -1,0 +1,3 @@
+$(STATIC_DIR)lain.type.integer.8.signed.overflowAware.operation.comparison.addition.$(STATIC_EXT):$(OBJECT_DIR)lain.type.integer.8.signed.overflowAware.operation.comparison.addition.o $(OBJECT_DIR)lain.type.integer.8.signed.overflowAware.operation.construct.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.map.signAbsolute.o
+	$(call link_static,$^,$@)
+STATIC_TARGETS+=$(STATIC_DIR)lain.type.integer.8.signed.overflowAware.operation.comparison.addition.$(STATIC_EXT)

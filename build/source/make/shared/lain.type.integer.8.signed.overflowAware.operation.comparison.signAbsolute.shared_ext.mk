@@ -1,0 +1,3 @@
+$(SHARED_DIR)lain.type.integer.8.signed.overflowAware.operation.map.signAbsolute.$(SHARED_EXT):$(STATIC_DIR)lain.type.integer.8.signed.overflowAware.operation.map.signAbsolute.$(STATIC_EXT)
+	$(call compile_shared,-Wl$(COMMA)--whole-archive $^ -Wl$(COMMA)--no-whole-archive,$@,$(CC_NOSTDINC_FLAG),)
+SHARED_TARGETS+=$(SHARED_DIR)lain.type.integer.8.signed.overflowAware.operation.map.signAbsolute.$(SHARED_EXT)
