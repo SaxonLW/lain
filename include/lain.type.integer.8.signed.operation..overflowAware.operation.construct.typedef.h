@@ -4,6 +4,7 @@
 #include "lain.type.integer.8.signed.typedef.h"
 #include "lain.type.integer.8.signed.operation..overflowAware.return.typedef.h"
 
-typedef lain_type_integer_8_signed_operation__overflowAware_return lain_type_integer_8_signed_operation__overflowAware_operation_construct(lain_type_integer_8_signed, lain_type_integer__operation__overflowAware_return_state);
+typedef lain_type_integer_8_signed_operation__overflowAware_return lain_type_integer_8_signed_operation__overflowAware_operation_construct_type(lain_type_integer_8_signed, lain_type_integer__operation__overflowAware_return_state);
+
 
 #endif
