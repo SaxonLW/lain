@@ -10,27 +10,21 @@ lain_type_integer_8_signed_operation__overflowAware_return lain_type_integer_8_s
 
     ret.state = LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_NO_OVERFLOW;
 
-    if (left > right){
-        if (leftSign==rightSign){
+    if (leftSign==rightSign){
+        ret.value = left-right;
+    } else if (left > right){
+        if (right == LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW){
+            ret.state = LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_OVERFLOW;
+        } else if (LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_HIGH-left >= (-1*right)){
             ret.value = left-right;
         } else {
-            if (right == LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW){
-                ret.state = LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_OVERFLOW;
-            } else if (LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_HIGH-left >= (-1*right)){
-                ret.value = left-right;
-            } else {
-                ret.state = LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_OVERFLOW;
-            }
+            ret.state = LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_OVERFLOW;
         }
     } else if (left < right){
-        if (leftSign==rightSign){
-            ret.value = left-right;            
+        if (left-LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW >= right){
+            ret.value = left-right;
         } else {
-            if (left-LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW >= right){
-                ret.value = left-right;
-            } else {
-                ret.state = LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_UNDERFLOW;
-            }
+            ret.state = LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_UNDERFLOW;
         }
     } else {
         ret.value = 0;
