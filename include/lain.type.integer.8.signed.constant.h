@@ -1,0 +1,12 @@
+#ifndef LAIN_TYPE_INTEGER_8_SIGNED_CONSTANT_H
+#define LAIN_TYPE_INTEGER_8_SIGNED_CONSTANT_H
+
+#include "lain.type.integer.8.signed.typedef.h"
+
+
+#define LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW ((lain_type_integer_8_signed)-128)
+#define LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_HIGH ((lain_type_integer_8_signed)127)
+#define LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_WIDTH_BIT ((void*)8)
+#define LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_WIDTH_OCTET ((void*)1)
+
+#endif

@@ -3,6 +3,6 @@
 
 #include "lain.type.integer.8.signed.operation..overflowAware.operation.construct.typedef.h"
 
-lain_type_integer_8_signed_operation__overflowAware_operation_construct_type lain_type_integer_8_signed_operation__overflowAware_operation_construct
+lain_type_integer_8_signed_operation__overflowAware_operation_construct_type lain_type_integer_8_signed_operation__overflowAware_operation_construct;
 
 #endif

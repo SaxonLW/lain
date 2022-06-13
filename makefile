@@ -64,6 +64,10 @@ include $(BUILD_SOURCE_DIR)make/static/*.mk
 
 include $(BUILD_SOURCE_DIR)make/shared/*.mk
 
+# SHARED
+
+include $(BUILD_SOURCE_DIR)make/test/*.mk
+
 .PHONY : build
 build:$(BUILD_TARGETS)
 
@@ -76,11 +80,15 @@ static:$(STATIC_TARGETS)
 .PHONY : shared
 shared:$(SHARED_TARGETS)
 
+.PHONY : test
+test:$(TEST_TARGETS)
+
 .PHONY : all
-all:static object build shared
+all:static object build shared test
 
 .PHONY : clean
 clean:
 	-rm $(OBJECT_DIR)*
 	-rm $(STATIC_DIR)*
 	-rm $(SHARED_DIR)*
+	-rm $(TEST_DIR)*
