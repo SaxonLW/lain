@@ -52,5 +52,5 @@ int main (int argv, char** argc){
     }
 
     exit:
-        return ret;
+    return ret;
 }

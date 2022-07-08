@@ -3,6 +3,7 @@
 
 #include "lain.type.integer.8.signed.operation.comparison..overflowAware.typedef.h"
 #include "lain.type.integer.8.signed.constant.h"
+#include "lain.type.integer.8.signed.operation..overflowAware.operation.construct.h"
 
 lain_type_integer_8_signed_operation_comparison__overflowAware lain_type_integer_8_signed_operation_comparison_multiplication_overflowAware;
 

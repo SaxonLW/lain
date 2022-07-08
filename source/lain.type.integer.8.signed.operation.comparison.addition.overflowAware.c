@@ -4,18 +4,14 @@ static const lain_type_integer_8_signed_operation__overflowAware_return lain_typ
 static const lain_type_integer_8_signed_operation__overflowAware_return lain_type_integer_8_signed_operation_comparison_addition_overflowAware_return_underflow = {0,LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_UNDERFLOW};
 
 lain_type_integer_8_signed_operation__overflowAware_return lain_type_integer_8_signed_operation_comparison_addition_overflowAware(lain_type_integer_8_signed left, lain_type_integer_8_signed right){
-    
-    lain_type_integer_8_signed leftSign = left > 0 ? 1 : (left < 0 ? -1 : 0);
-    lain_type_integer_8_signed rightSign = right > 0 ? 1 : (right < 0 ? -1 : 0);
-
     return (
-        (leftSign & rightSign) 
+        (left & right)
             ?
         (
-            (leftSign == rightSign)
+            ((left > 0) == (right > 0))
                 ?
             (
-                (leftSign == 1)
+                (left > 0)
                     ?
                 (
                     ((LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_HIGH-left) >= right)
