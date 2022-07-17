@@ -58,28 +58,33 @@ include $(BUILD_SOURCE_DIR)make/object/*.mk
 
 # STATIC
 
-include $(BUILD_SOURCE_DIR)make/static/*.mk
+#include $(BUILD_SOURCE_DIR)make/static/*.mk
 
 # SHARED
 
-include $(BUILD_SOURCE_DIR)make/shared/*.mk
+#include $(BUILD_SOURCE_DIR)make/shared/*.mk
 
 # SHARED
 
-include $(BUILD_SOURCE_DIR)make/test/*.mk
+#include $(BUILD_SOURCE_DIR)make/test/*.mk
 
+BUILD_TARGETS+=
 .PHONY : build
 build:$(BUILD_TARGETS)
 
+OBJECT_TARGETS+=
 .PHONY : object
 object:$(OBJECT_TARGETS)
 
+STATIC_TARGETS+=
 .PHONY : static
 static:$(STATIC_TARGETS)
 
+SHARED_TARGETS+=
 .PHONY : shared
 shared:$(SHARED_TARGETS)
 
+TEST_TARGETS+=
 .PHONY : test
 test:$(TEST_TARGETS)
 

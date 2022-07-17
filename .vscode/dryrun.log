@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/slysaght-wheeler/repos/lain'
+make: 'build/bin/lain.build.c.type.size' is up to date.
+make: Leaving directory '/home/slysaght-wheeler/repos/lain'
+ 

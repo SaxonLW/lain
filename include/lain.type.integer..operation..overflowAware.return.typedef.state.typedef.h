@@ -3,8 +3,7 @@
 
 typedef enum lain_type_integer__operation__overflowAware_return_state {
      LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_NO_OVERFLOW = 0
-    ,LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_UNDERFLOW = 1
-    ,LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_OVERFLOW = 2
+    ,LAIN_TYPE_INTEGER__OPERATION__OVERFLOWAWARE_OVERFLOW = 1
 } lain_type_integer__operation__overflowAware_return_state;
 
 #endif

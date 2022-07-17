@@ -1,0 +1,1689 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Sun Jul 17 14:16:59 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from 'makefile', line 20)
+CC_OBJECT_FLAG = -c
+# default
+.SHELLFLAGS := -c
+# environment
+VSCODE_AGENT_FOLDER = /home/slysaght-wheeler/.vscode-server
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'makefile', line 11)
+OBJECT_DIR = object/
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+CURDIR := /home/slysaght-wheeler/repos/lain
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# environment
+_ = /usr/bin/make
+# makefile (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.o.mk', line 1)
+MAKEFILE_LIST :=  makefile build/source/make/include/lain.type.integer.8.signed.operation.comparison.byPointer.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.pointer.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.h.mk build/source/make/include/lain.type.integer.8.signed.operation..overflowAware.operation.construct.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.operation.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.subraction.overflowAware.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.subtraction.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.exponentiation.overflowAware.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.division.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.multiplication.h.mk build/source/make/include/lain.type.integer.8.signed.operation.map.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.notEqualTo.h.mk build/source/make/include/lain.type.integer.8.signed.operation.map.signAbsolute.h.mk build/source/make/include/lain.type.integer.8.signed.define.h.mk build/source/make/include/lain.type.integer.8.signed.pointer.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.constant.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.equalTo.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.h.mk build/source/make/include/lain.c.type.size.h.mk build/source/make/include/lain.type.integer.8.signed.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.logicalOr.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.logicalAnd.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.lessThan.h.mk build/source/make/include/lain.type.integer.8.signed.pointer.from.lain.type.integer.8.signed.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.modulo.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.addition.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.exponentiation.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.h.mk build/source/make/include/lain.type.integer..operation..overflowAware.return.typedef.state.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.operation..overflowAware.return.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.operation.map.signNegate.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.bitwiseOr.h.mk build/source/make/include/lain.type.integer.8.unsigned.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.pointer.from.lain.type.integer.8.signed.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.byPointer.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.modulo.overflowAware.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison..overflowAware.typedef.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.division.overflowAware.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.h.mk build/source/make/include/lain.type.integer.8.signed.operation..overflowAware.operation.construct.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.greaterThan.h.mk build/source/make/include/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.h.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.division.overflowAware.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.c.mk build/source/make/source/lain.type.integer.8.signed.operation..overflowAware.operation.construct.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.division.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.multiplication.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.subtraction.overflowAware.c.mk build/source/make/source/lain.type.integer.8.signed.operation.map.signAbsolute.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.equalTo.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.logicalOr.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.logicalAnd.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.lessThan.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.modulo.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.addition.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.greaterThan.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.c.mk build/source/make/source/lain.type.integer.8.signed.operation.map.signNegate.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.subtraction.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.notEqualTo.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.bitwiseOr.c.mk build/source/make/source/lain.type.integer.8.signed.operation.comparison.byPointer.c.mk build/source/make/source/lain.type.integer.8.signed.overflowAware.operation.construct.c.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.notEqualTo.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.division.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.multiplication.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.subtraction.overflowAware.o.mk build/source/make/object/lain.type.integer.8.signed.operation.map.signAbsolute.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.equalTo.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.modulo.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.logicalOr.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.logicalAnd.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.o.mk build/source/make/object/lain.type.integer.8.signed.operation.map.signNegate.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.lessThan.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.addition.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.greaterThan.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.subtraction.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseOr.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.division.overflowAware.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.o.mk build/source/make/object/lain.type.integer.8.signed.operation..overflowAware.operation.construct.o.mk build/source/make/object/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.o.mk
+# environment
+HISTCONTROL = ignoredups
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+XDG_DATA_DIRS = /home/slysaght-wheeler/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# makefile (from 'makefile', line 33)
+ARCHIVE_FLAG = rcs
+# makefile (from 'makefile', line 27)
+compile_executable = $(CC) $(INCLUDE_PATHS) $(4) $(CC_FLAGS) $(3) -o $(2) $(1)
+# makefile (from 'makefile', line 35)
+link_static = $(ARCHIVE_EXE) $(ARCHIVE_FLAG) $(2) $(1)
+# makefile (from 'makefile', line 3)
+COMMA = ,
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# environment
+ 
+VSCODE_CWD = /home/slysaght-wheeler
+# makefile (from 'makefile', line 79)
+STATIC_TARGETS = 
+# environment
+SSH_CONNECTION = 192.168.1.5 49957 192.168.1.10 22
+# environment
+PATH = /home/slysaght-wheeler/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/bin/remote-cli:/home/slysaght-wheeler/.local/bin:/home/slysaght-wheeler/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'makefile', line 10)
+INCLUDE_DIR = include/
+# makefile (from 'makefile', line 14)
+TEST_DIR = test/
+# makefile (from 'makefile', line 19)
+CC_SHARED_FLAG = -shared -fPIC
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-8543c3a4-b3d1-48c0-ac18-95334a221e5e.sock
+# makefile (from 'makefile', line 25)
+INCLUDE_PATHS = -I$(INCLUDE_DIR)
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# makefile (from 'makefile', line 16)
+CC_FLAGS = -Wall -Wextra -std=c89 -pedantic -Wmissing-prototypes -Wstrict-prototypes -Wold-style-definition -O3
+# automatic
+%F = $(notdir $%)
+# makefile (from 'makefile', line 9)
+SOURCE_DIR = source/
+# makefile (from 'makefile', line 75)
+OBJECT_TARGETS = $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseXOr.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.notEqualTo.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.addition.overflowAware.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.division.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.multiplication.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.subtraction.overflowAware.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.map.signAbsolute.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.equalTo.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.modulo.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.logicalOr.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.logicalAnd.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseAnd.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.map.signNegate.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.lessThan.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.addition.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.greaterThan.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.subtraction.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseOr.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.division.overflowAware.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.o $(OBJECT_DIR)lain.type.integer.8.signed.operation..overflowAware.operation.construct.o $(OBJECT_DIR)lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.o 
+# environment
+PWD = /home/slysaght-wheeler/repos/lain
+# default
+.LOADED := 
+# makefile (from 'build/source/make/source/lain.type.integer.8.signed.overflowAware.operation.construct.c.mk', line 2)
+SOURCE_TARGETS = $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseXOr.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.division.overflowAware.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.c $(SOURCE_DIR)lain.type.integer.8.signed.operation..overflowAware.operation.construct.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.addition.overflowAware.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.division.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.multiplication.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.subtraction.overflowAware.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.map.signAbsolute.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.equalTo.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.logicalOr.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.logicalAnd.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.lessThan.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.modulo.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.addition.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.greaterThan.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseAnd.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.map.signNegate.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.subtraction.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.notEqualTo.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseOr.c $(SOURCE_DIR)lain.type.integer.8.signed.operation.comparison.byPointer.c $(SOURCE_DIR)lain.type.integer.8.signed.overflowAware.operation.construct.c
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# makefile (from 'makefile', line 23)
+SHARED_EXT = so
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/slysaght-wheeler
+# environment
+LOGNAME = slysaght-wheeler
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
++F = $(notdir $+)
+# environment
+SELINUX_LEVEL_REQUESTED = 
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+HOSTNAME = localhost.localdomain
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 5
+# makefile (from 'makefile', line 1)
+CC = gcc
+# makefile (from 'makefile', line 5)
+BUILD_DIR = build/
+# environment
+XDG_SESSION_ID = 15784
+# environment
+USER = slysaght-wheeler
+# makefile
+.DEFAULT_GOAL := build/bin/lain.build.c.type.size
+# makefile (from 'build/source/make/include/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.h.mk', line 2)
+INCLUDE_TARGETS = $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.byPointer.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.pointer.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation..overflowAware.operation.construct.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.subraction.overflowAware.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseXOr.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.subtraction.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.addition.overflowAware.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.exponentiation.overflowAware.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.division.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.multiplication.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.map.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.notEqualTo.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.map.signAbsolute.h $(INCLUDE_DIR)lain.type.integer.8.signed.define.h $(INCLUDE_DIR)lain.type.integer.8.signed.pointer.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.constant.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.equalTo.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.h $(INCLUDE_DIR)lain.c.type.size.h $(INCLUDE_DIR)lain.type.integer.8.signed.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.logicalOr.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.logicalAnd.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.lessThan.h $(INCLUDE_DIR)lain.type.integer.8.signed.pointer.from.lain.type.integer.8.signed.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.modulo.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.addition.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.exponentiation.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseAnd.h $(INCLUDE_DIR)lain.type.integer..operation..overflowAware.return.typedef.state.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation..overflowAware.return.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.map.signNegate.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.bitwiseOr.h $(INCLUDE_DIR)lain.type.integer.8.unsigned.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.pointer.from.lain.type.integer.8.signed.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.byPointer.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.modulo.overflowAware.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison..overflowAware.typedef.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.division.overflowAware.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation..overflowAware.operation.construct.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.greaterThan.h $(INCLUDE_DIR)lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.h
+# makefile (from 'makefile', line 12)
+SHARED_DIR = shared/
+# makefile (from 'makefile', line 17)
+CC_NOSTDINC_FLAG = -nostdinc
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'makefile', line 87)
+TEST_TARGETS = 
+# default
+MAKE_COMMAND := make
+# makefile (from 'makefile', line 28)
+compile_object = $(CC) $(INCLUDE_PATHS) $(4) $(CC_FLAGS) $(3) $(CC_OBJECT_FLAG) -o $(2) $(1)
+# environment
+OLDPWD = /home/slysaght-wheeler/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile
+MAKEFLAGS = pqrR
+ 
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_CLIENT = 192.168.1.5 49957 22
+# environment
+MAIL = /var/spool/mail/slysaght-wheeler
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+BROWSER = /home/slysaght-wheeler/.vscode-server/bin/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a/bin/helpers/browser.sh
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# makefile (from 'makefile', line 29)
+compile_shared = $(CC) $(INCLUDE_PATHS) $(4) $(CC_FLAGS) $(3) $(CC_SHARED_FLAG) -o $(2) $(1)
+# default
+MAKEFILES := 
+# environment
+SELINUX_USE_CURRENT_RANGE = 
+# automatic
+<F = $(notdir $<)
+# environment
+LC_ALL = C
+# makefile (from 'makefile', line 6)
+BUILD_SOURCE_DIR = $(BUILD_DIR)source/
+# makefile (from 'makefile', line 22)
+STATIC_EXT = a
+# automatic
+^F = $(notdir $^)
+# environment
+SELINUX_ROLE_REQUESTED = 
+# makefile (from 'makefile', line 13)
+STATIC_DIR = static/
+# default
+SUFFIXES := 
+# environment
+HISTSIZE = 1000
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile (from 'makefile', line 32)
+ARCHIVE_EXE = ar
+# makefile (from 'makefile', line 71)
+BUILD_TARGETS = $(BUILD_BIN_DIR)lain.build.c.type.size $(INCLUDE_DIR)lain.c.type.size.h 
+# default
+.RECIPEPREFIX := 
+# default
+MAKE_HOST := x86_64-redhat-linux-gnu
+# environment
+LANG = C
+# makefile (from 'makefile', line 7)
+BUILD_BIN_DIR = $(BUILD_DIR)bin/
+# makefile (from 'makefile', line 83)
+SHARED_TARGETS = 
+# variable set hash-table stats:
+# Load=100/1024=10%, Rehash=0, Collisions=67/779=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# build/source/make/object (device 64770, inode 33575714): 27 files, no impossibilities.
+# . (device 64770, inode 33575369): 15 files, no impossibilities.
+# build/source/make/include (device 64770, inode 285788): 48 files, no impossibilities.
+# build/source/make/source (device 64770, inode 100950519): 29 files, no impossibilities.
+
+# 119 files, no impossibilities in 4 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.subraction.overflowAware.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.c: include/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.lessThan.o: source/lain.type.integer.8.signed.operation.comparison.lessThan.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:52.983792357
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.lessThan.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.greaterThan.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.typedef.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include/lain.type.integer.8.signed.operation.map.signAbsolute.h: include/lain.type.integer.8.signed.operation.map.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.byPointer.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation..overflowAware.operation.construct.c: include/lain.type.integer.8.signed.operation..overflowAware.operation.construct.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.equalTo.o: source/lain.type.integer.8.signed.operation.comparison.equalTo.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:52.813792012
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.equalTo.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation..overflowAware.operation.construct.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison..overflowAware.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+
+build/bin/lain.build.c.type.size: build/source/lain.build.c.type.size.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 40):
+	$(call compile_executable,$^,$@,,)
+
+source/lain.type.integer.8.signed.operation.comparison.subtraction.c: include/lain.type.integer.8.signed.operation.comparison.subtraction.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.map.signAbsolute.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.subtraction.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.c: include/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.notEqualTo.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.byPointer.h: include/lain.type.integer.8.signed.operation.comparison.byPointer.typedef.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include/lain.type.integer.8.signed.operation.comparison.bitwiseOr.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.lessThan.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.division.overflowAware.o: source/lain.type.integer.8.signed.operation.comparison.division.overflowAware.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:53:39.970887746
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.division.overflowAware.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.define.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+
+all: static object build shared test
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.equalTo.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.byPointer.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.bitwiseOr.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+.PHONY: build object static shared test all clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.pointer.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+ 
+include/lain.type.integer.8.signed.operation.comparison.division.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.division.overflowAware.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.pointer.typedef.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.division.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.lessThan.c: include/lain.type.integer.8.signed.operation.comparison.lessThan.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.pointer.from.lain.type.integer.8.signed.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.lessThan.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+object: object/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.o object/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.o object/lain.type.integer.8.signed.operation.comparison.notEqualTo.o object/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.o object/lain.type.integer.8.signed.operation.comparison.division.o object/lain.type.integer.8.signed.operation.comparison.multiplication.o object/lain.type.integer.8.signed.operation.comparison.subtraction.overflowAware.o object/lain.type.integer.8.signed.operation.map.signAbsolute.o object/lain.type.integer.8.signed.operation.comparison.equalTo.o object/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.o object/lain.type.integer.8.signed.operation.comparison.modulo.o object/lain.type.integer.8.signed.operation.comparison.logicalOr.o object/lain.type.integer.8.signed.operation.comparison.logicalAnd.o object/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.o object/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.o object/lain.type.integer.8.signed.operation.map.signNegate.o object/lain.type.integer.8.signed.operation.comparison.lessThan.o object/lain.type.integer.8.signed.operation.comparison.addition.o object/lain.type.integer.8.signed.operation.comparison.greaterThan.o object/lain.type.integer.8.signed.operation.comparison.subtraction.o object/lain.type.integer.8.signed.operation.comparison.bitwiseOr.o object/lain.type.integer.8.signed.operation.comparison.division.overflowAware.o object/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.o object/lain.type.integer.8.signed.operation..overflowAware.operation.construct.o object/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.o
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.equalTo.c: include/lain.type.integer.8.signed.operation.comparison.equalTo.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.modulo.c.mk:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.unsigned.typedef.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.equalTo.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.o: source/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 14:00:58.321777611
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+include/lain.type.integer.8.signed.operation.comparison.exponentiation.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include/lain.type.integer.8.signed.operation.comparison.logicalOr.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.logicalAnd.o: source/lain.type.integer.8.signed.operation.comparison.logicalAnd.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:52.899792186
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.logicalAnd.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+object/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.o: source/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:52.834792055
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+include/lain.type.integer.8.signed.operation.comparison.multiplication.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.typedef.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.division.overflowAware.c: include/lain.type.integer.8.signed.operation.comparison.division.overflowAware.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.logicalOr.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.c: include/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:42.183135842
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.division.overflowAware.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.greaterThan.c: include/lain.type.integer.8.signed.operation.comparison.greaterThan.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.multiplication.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.subtraction.overflowAware.c: include/lain.type.integer.8.signed.operation.comparison.subraction.overflowAware.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:33.770118764
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.map.typedef.h: include/lain.type.integer.8.signed.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+ 
+
+include/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer..operation..overflowAware.return.typedef.state.typedef.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:18:19.435571563
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 14:13:26.235295611
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.logicalAnd.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+build: build/bin/lain.build.c.type.size include/lain.c.type.size.h
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.addition.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.815085424
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.map.signNegate.h: include/lain.type.integer.8.signed.operation.map.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.exponentiation.overflowAware.h.mk:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.overflowAware.operation.construct.c: include/lain.type.integer.8.signed.overflowAware.operation.construct.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+object/lain.type.integer.8.signed.operation.comparison.greaterThan.o: source/lain.type.integer.8.signed.operation.comparison.greaterThan.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:53.02479244
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.greaterThan.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation..overflowAware.operation.construct.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.addition.c.mk:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.map.signNegate.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.c: include/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:56:13.92520028
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.modulo.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.o.mk:
+ 
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.subraction.overflowAware.h: include/lain.type.integer.8.signed.operation.comparison..overflowAware.typedef.h include/lain.type.integer.8.signed.constant.h
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.map.signAbsolute.o: source/lain.type.integer.8.signed.operation.map.signAbsolute.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:52.792791969
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.map.signAbsolute.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+object/lain.type.integer.8.signed.operation.comparison.subtraction.overflowAware.o: source/lain.type.integer.8.signed.operation.comparison.subtraction.overflowAware.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 14:00:58.290777548
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.subtraction.overflowAware.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.subtraction.overflowAware.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.byPointer.typedef.h: include/lain.type.integer.8.signed.operation.comparison.pointer.typedef.h include/lain.type.integer.8.signed.typedef.h include/lain.type.integer.8.signed.pointer.typedef.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+ 
+#  File has not been updated.
+
+source/lain.type.integer.8.signed.operation.comparison.logicalAnd.c: include/lain.type.integer.8.signed.operation.comparison.logicalAnd.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation..overflowAware.operation.construct.h: include/lain.type.integer.8.signed.operation..overflowAware.operation.construct.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.812085418
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison..overflowAware.typedef.h: include/lain.type.integer.8.signed.operation..overflowAware.return.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.815085424
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.logicalAnd.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.c.type.size.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+
+static:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.greaterThan.o.mk:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.o: source/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:53:40.042887892
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.subtraction.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.constant.h.mk:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation..overflowAware.operation.construct.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.notEqualTo.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.bitwiseOr.o: source/lain.type.integer.8.signed.operation.comparison.bitwiseOr.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:53.066792525
+ 
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseOr.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/lain.build.c.type.size.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.map.signAbsolute.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.subtraction.overflowAware.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.subtraction.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.notEqualTo.c: include/lain.type.integer.8.signed.operation.comparison.notEqualTo.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.define.h: include/lain.type.integer.8.signed.typedef.h
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.modulo.overflowAware.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.pointer.from.lain.type.integer.8.signed.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.division.o: source/lain.type.integer.8.signed.operation.comparison.division.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:37:06.783846403
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.division.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.h.mk:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation..overflowAware.return.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.pointer.typedef.h: include/lain.type.integer.8.signed.typedef.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+object/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.o: source/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 14:00:58.266777499
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.greaterThan.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseOr.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+shared:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Successfully updated.
+ 
+
+source/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.c: include/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.map.signAbsolute.c: include/lain.type.integer.8.signed.operation.map.signAbsolute.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.map.signAbsolute.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.pointer.from.lain.type.integer.8.signed.h: include/lain.type.integer.8.signed.pointer.from.lain.type.integer.8.signed.typedef.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include/lain.type.integer.8.signed.operation.comparison.lessThan.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.notEqualTo.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.equalTo.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.division.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.c: include/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+ 
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.lessThan.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.lessThanOrEqualTo.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.byPointer.c: include/lain.type.integer.8.signed.operation.comparison.byPointer.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.equalTo.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.bitwiseOr.c: include/lain.type.integer.8.signed.operation.comparison.bitwiseOr.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.byPointer.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.multiplication.o: source/lain.type.integer.8.signed.operation.comparison.multiplication.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:37:06.803846444
+ 
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.multiplication.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.bitwiseOr.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'makefile', line 96):
+	-rm $(OBJECT_DIR)*
+	-rm $(STATIC_DIR)*
+	-rm $(SHARED_DIR)*
+	-rm $(TEST_DIR)*
+
+include/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.division.overflowAware.h: include/lain.type.integer.8.signed.operation.comparison..overflowAware.typedef.h include/lain.type.integer.8.signed.constant.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+include/lain.type.integer.8.signed.overflowAware.operation.construct.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+ 
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.division.overflowAware.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.division.c: include/lain.type.integer.8.signed.operation.comparison.division.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.division.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.o: source/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:37:06.695846221
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.overflowAware.operation.construct.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+ 
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.multiplication.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.addition.o: source/lain.type.integer.8.signed.operation.comparison.addition.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:53.0047924
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.addition.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+object/lain.type.integer.8.signed.operation.map.signNegate.o: source/lain.type.integer.8.signed.operation.map.signNegate.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:52.962792314
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.map.signNegate.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.logicalOr.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.pointer.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.exponentiation.overflowAware.h: include/lain.type.integer.8.signed.operation.comparison..overflowAware.typedef.h include/lain.type.integer.8.signed.constant.h
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+object/lain.type.integer.8.signed.operation.comparison.logicalOr.o: source/lain.type.integer.8.signed.operation.comparison.logicalOr.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:52.877792142
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.logicalOr.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.unsigned.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation..overflowAware.operation.construct.typedef.h: include/lain.type.integer.8.signed.typedef.h include/lain.type.integer.8.signed.operation..overflowAware.return.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.815085424
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.modulo.o: source/lain.type.integer.8.signed.operation.comparison.modulo.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:52.856792099
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.modulo.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.exponentiation.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+ 
+
+source/lain.type.integer.8.signed.operation.comparison.logicalOr.c: include/lain.type.integer.8.signed.operation.comparison.logicalOr.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.multiplication.overflowAware.h: include/lain.type.integer.8.signed.operation.comparison..overflowAware.typedef.h include/lain.type.integer.8.signed.constant.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.logicalOr.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.o: source/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:37:06.716846264
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.addition.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.map.signNegate.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation..overflowAware.operation.construct.o: source/lain.type.integer.8.signed.operation..overflowAware.operation.construct.c
+ 
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:53:40.021887849
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation..overflowAware.operation.construct.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+source/lain.type.integer.8.signed.operation.comparison.multiplication.c: include/lain.type.integer.8.signed.operation.comparison.multiplication.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.multiplication.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.logicalAnd.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.o: source/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:52.920792229
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseAnd.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+ 
+object/lain.type.integer.8.signed.operation.comparison.subtraction.o: source/lain.type.integer.8.signed.operation.comparison.subtraction.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:53.045792483
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.subtraction.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+include/lain.c.type.size.h: build/bin/lain.build.c.type.size
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:13:15.211958883
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'makefile', line 44):
+	$(shell ./$^ > $@)
+
+include/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.constant.h: include/lain.type.integer.8.signed.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.811085416
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.modulo.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.notEqualTo.o: source/lain.type.integer.8.signed.operation.comparison.notEqualTo.c
+#  Implicit rule search has not been done.
+ 
+#  Last modified 2022-07-17 13:37:06.737846308
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.notEqualTo.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+include/lain.type.integer.8.signed.operation.comparison.typedef.h: include/lain.type.integer.8.signed.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.logicalAnd.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.208958877
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.addition.overflowAware.h: include/lain.type.integer.8.signed.operation.comparison..overflowAware.typedef.h include/lain.type.integer.8.signed.constant.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.map.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/source/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.c.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.greaterThanOrEqualTo.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+ 
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.c: include/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.bitwiseXOr.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation..overflowAware.operation.construct.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer..operation..overflowAware.return.typedef.state.typedef.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.addition.c: include/lain.type.integer.8.signed.operation.comparison.addition.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.map.signNegate.c: include/lain.type.integer.8.signed.operation.map.signNegate.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.addition.h.mk:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-07-17 13:13:15.204958869
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.map.signNegate.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.206958873
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.subtraction.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+#  Successfully updated.
+
+include/lain.type.integer.8.signed.operation.comparison.modulo.overflowAware.h: include/lain.type.integer.8.signed.operation.comparison..overflowAware.typedef.h include/lain.type.integer.8.signed.constant.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include/lain.type.integer.8.signed.pointer.from.lain.type.integer.8.signed.typedef.h: include/lain.type.integer.8.signed.typedef.h include/lain.type.integer.8.signed.pointer.typedef.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+include/lain.type.integer.8.signed.operation..overflowAware.return.typedef.h: include/lain.type.integer.8.signed.typedef.h include/lain.type.integer..operation..overflowAware.return.typedef.state.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.815085424
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/object/lain.type.integer.8.signed.operation.comparison.notEqualTo.o.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.207958875
+#  File has been updated.
+ 
+#  Successfully updated.
+
+object/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.o: source/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.c
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-17 13:52:52.941792272
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'build/source/make/object/lain.type.integer.8.signed.operation.comparison.bitwiseRightShift.o.mk', line 2):
+	$(call compile_object,$^,$@,$(CC_NOSTDINC_FLAG),)
+
+include/lain.type.integer.8.signed.operation.comparison.greaterThan.h: include/lain.type.integer.8.signed.operation.comparison.typedef.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.816085426
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.modulo.c: include/lain.type.integer.8.signed.operation.comparison.modulo.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.81808543
+#  File has been updated.
+#  Successfully updated.
+
+source/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.c: include/lain.type.integer.8.signed.operation.comparison.bitwiseLeftShift.h
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:14:17.817085428
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/source/make/include/lain.type.integer.8.signed.operation.comparison.modulo.h.mk:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:13:15.205958871
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=210/1024=21%, Rehash=0, Collisions=58/486=12%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+ 
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 3 (2) / strings = 323 / storage = 22688 B / avg = 70 B
+# current buf: size = 8162 B / used = 6483 B / count = 89 / avg = 72 B
+# other used: total = 16205 B / count = 234 / avg = 69 B
+# other free: total = 119 B / max = 65 B / min = 54 B / avg = 59 B
+
+# strcache performance: lookups = 701 / hit rate = 53%
+# hash-table stats:
+# Load=323/8192=4%, Rehash=0, Collisions=12/701=2%
+# Finished Make data base on Sun Jul 17 14:16:59 2022
+
+ 
