@@ -1,15 +1,23 @@
 from os.path import isfile
 from os import linesep
+import os
 import json
 from glob import glob
 import re
 
-from CompilationUnitFile import CompilationUnitFile
+from CompilationUnitFileModule import CompilationUnitFile
 
 class CompilationUnit(object):
-    def __init__(self, name):
-		self.name = name
-		if isfile(self.nameToJSONPath(name)):
+	def __init__(self, name):
+
+		if isinstance(name,str):
+			self.name = name.split(".")
+		elif isinstance(name,list):
+			self.name = name
+		else:
+			raise ValueError(f"name must be str or list, not {type(name)}")
+		
+		if isfile(self.nameToJSONPath()):
 			for key, value in self.getJSONDict().items():
 				if key == "dependencyList":
 					self.dependencyList = [CompilationUnit(dependency) for dependency in value]
@@ -18,7 +26,7 @@ class CompilationUnit(object):
 			outDict = dict()
 			outDict["hasInclude"] = True
 			outDict["name"] = self.name
-			with open(self.nameToJSONPath(name), "w") as f:
+			with open(self.nameToJSONPath(), "w") as f:
 				json.dump(outDict, f, indent="\t")
 			for key, value in self.getJSONDict().items():
 				setattr(self, key, value)
@@ -31,19 +39,19 @@ class CompilationUnit(object):
 		return os.path.join(".","build","source","CompilationUnit","compilationUnitData")
 
 	def nameToJSONPath(self):
-		return os.path.join(self.getJSONDir(), f"{self.name}.json")
+		return os.path.join(self.getJSONDir(), f"{'.'.join(self.name)}.json")
 
 	def getHeaderFile(self):
-		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None), ).getHeaderFile()
+		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None) ).getHeaderFile()
 
 	def getSourceFile(self):
-		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None), ).getSourceFile()
+		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None) ).getSourceFile()
 
 	def getSharedFile(self):
-		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None), ).getSharedFile()
+		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None) ).getSharedFile()
 
 	def getStaticFile(self):
-		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None), ).getStaticFile()
+		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None) ).getStaticFile()
 
 	def getAllNameObjects(self):
 		for file in glob(os.path.join(self.getJSONDir(), "*.json")):
@@ -68,4 +76,4 @@ class CompilationUnit(object):
 		if replace:
 			self.dependencyList = scanDependencyList
 		else:
-			self.dependencyList = self.dependencyList + scanDependencyList
+			self.dependencyList = set(self.dependencyList + scanDependencyList)

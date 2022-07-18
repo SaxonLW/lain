@@ -1,6 +1,46 @@
 { pkgs }: {
 	deps = [
-		pkgs.python39Full
+		pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.import os
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python310
+pkgs.python39Full
 pkgs.python39Full
 pkgs.python39Full
 pkgs.python39Full
