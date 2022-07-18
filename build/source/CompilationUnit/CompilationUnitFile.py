@@ -4,19 +4,23 @@ import json
 from glob import glob
 
 from CompilationUnit import CompilationUnit
+from CompilationUnitHeaderFile import CompilationUnitHeaderFile
+from CompilationUnitSharedFile import CompilationUnitSharedFile
+from CompilationUnitSourceFile import CompilationUnitSourceFile
+from CompilationUnitStaticFile import CompilationUnitStaticFile
 
 class CompilationUnitFile(object):
     def __init__(self, fromSource=None, name=None, dependencies=None):
         if fromSource is not None:
             if isfile(fromSource):
                 with open(fileSource) as f:
-                    self = self.__init__(**json.load(f))
+                    self.__init__(**json.load(f))
             elif isinstance(fromSource, dict):
-                self = self.__init__(**fileSource)
+                self.__init__(**fileSource)
             elif isinstance(fromSource,str):
-                self = self.__init__(**json.loads(fromSource))
+                self.__init__(**json.loads(fromSource))
             elif isinstance(fromSource,CompilationUnitFile)
-                self = fromSource
+                fromSource
             else:
                 raise ValueError("fromSource is unknown type")
         
@@ -62,3 +66,15 @@ class CompilationUnitFile(object):
 
 	def getDirectory(self):
         raise NotImplementedError(f"{repr(self.getDirectory)} not overloaded")
+
+	def getHeaderFile(self):
+		return CompilationUnitHeaderFile(fromSource=self)
+
+	def getSharedFile(self):
+		return CompilationUnitSharedFile(fromSource=self)
+
+	def getSourceFile(self):
+		return CompilationUnitSourceFile(fromSource=self)
+
+	def getStaticFile(self):
+		return CompilationUnitStaticFile(fromSource=self)
