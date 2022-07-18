@@ -17,6 +17,10 @@ class CompilationSourceUnitFile(CompilationUnitFile):
 
 	def getDirectory(self):
 		return self.directory
+
+	def getSource(self):
+		with open(self.getFileName()) as f:
+			return f.read()
 	
 	def writeOut(self):
 		with open(self.getFileName(), "w") as f:

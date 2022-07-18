@@ -18,7 +18,8 @@ class CompilationUnitHeaderFile(CompilationUnitFile):
         return self.getFileName.replace(".","_").upper()
 
     def getSource(self):
-        return f"""#ifndef {self.getHeaderGuardDefinition()}{self.newLine}#define {self.getHeaderGuardDefinition()}{self.newLine}{super().getSource()}{self.newLine}#endif /*{self.getHeaderGuardDefinition()}*/"""
+        with open(self.getFileName()) as f:
+			return f.read()
 
 	def getExtension(self):
 		return self.extension
