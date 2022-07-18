@@ -1,14 +1,15 @@
+from sys import platform
+
 from CompilationUnitFile import CompilationUnitFile
 
 class CompilationUnitHeaderFile(CompilationUnitFile):
     def __init__(self, fromSource=None, name=None, source=None, dependencies=None):
         if isintance(fromSource,CompilationUnitHeaderFile):
-            self = fromSource
+            self = deepcopy(fromSource)
         else:
             super().__init__(fromSource=fromSource, name=name, source=source, dependencies=dependencies)
             self.directory = "include"
             self.fileExtension = "h"
-        return self
     
     def getFileName(self):
         return os.path.join(".",self.includeDirectory,super().getFileName()+self.headerExtension)
@@ -18,3 +19,13 @@ class CompilationUnitHeaderFile(CompilationUnitFile):
 
     def getSource(self):
         return f"""#ifndef {self.getHeaderGuardDefinition()}{self.newLine}#define {self.getHeaderGuardDefinition()}{self.newLine}{super().getSource()}{self.newLine}#endif /*{self.getHeaderGuardDefinition()}*/"""
+
+	def getExtension(self):
+		return self.extension
+
+	def getDirectory(self):
+		return self.directory
+
+	def writeOut(self):
+		with open(self.getFileName(), "w") as f:
+			f.write(self.getSource())

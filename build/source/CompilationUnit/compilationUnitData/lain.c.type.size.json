@@ -1,0 +1,7 @@
+{
+	"hasInclude": true,
+	"name": "lain.c.type.size",
+	"objectDefinitionList": [
+		"lain_c_type_size"
+	]
+}
