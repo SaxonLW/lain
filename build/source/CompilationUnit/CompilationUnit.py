@@ -5,15 +5,15 @@ import json
 from glob import glob
 import re
 
-from CompilationUnitFileModule import CompilationUnitFile
+from CompilationUnitFile import CompilationUnitFile, CompilationUnitFileType
 
 class CompilationUnit(object):
 	def __init__(self, name):
 
 		if isinstance(name,str):
-			self.name = name.split(".")
-		elif isinstance(name,list):
 			self.name = name
+		elif isinstance(name,list):
+			self.name = ".".join(name)
 		else:
 			raise ValueError(f"name must be str or list, not {type(name)}")
 		
@@ -26,50 +26,62 @@ class CompilationUnit(object):
 			outDict = dict()
 			outDict["hasInclude"] = True
 			outDict["name"] = self.name
-			with open(self.nameToJSONPath(), "w") as f:
-				json.dump(outDict, f, indent="\t")
-			for key, value in self.getJSONDict().items():
+			for key, value in outDict.items():
 				setattr(self, key, value)
 
 	def getJSONDict(self):
 		with open(self.nameToJSONPath()) as f:
 			return json.load(f)
 
-	def getJSONDir(self):
+	def __repr__(self):
+		middle = ",".join([f"{key}={value}" for key, value in self.__dict__.items()])
+		return f"CompilationUnit({middle})"
+
+	def __string__(self):
+		middle = ",".join([f"{key}={value}" for key, value in self.__dict__.items()])
+		return f"CompilationUnit({middle})"
+	
+	@classmethod
+	def getJSONDir(cls):
 		return os.path.join(".","build","source","CompilationUnit","compilationUnitData")
 
 	def nameToJSONPath(self):
-		return os.path.join(self.getJSONDir(), f"{'.'.join(self.name)}.json")
+		return os.path.join(self.getJSONDir(), f"{self.name}.json")
 
 	def getHeaderFile(self):
-		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None) ).getHeaderFile()
+		return CompilationUnitFile(self, CompilationUnitFileType.HEADER)
 
 	def getSourceFile(self):
-		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None) ).getSourceFile()
+		return CompilationUnitFile(self, CompilationUnitFileType.SOURCE)
 
 	def getSharedFile(self):
-		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None) ).getSharedFile()
+		return CompilationUnitFile(self, CompilationUnitFileType.SHARED)
 
 	def getStaticFile(self):
-		return CompilationUnitFile(name=self.name, dependencies=getattr(self,"dependencyList",None) ).getStaticFile()
+		return CompilationUnitFile(self, CompilationUnitFileType.STATIC)
 
-	def getAllNameObjects(self):
-		for file in glob(os.path.join(self.getJSONDir(), "*.json")):
-			with open(file) as f:
-				tmp_dict = json.load(f)
-				ret_dict = dict()
-				ret_dict["name"] = tmp_dict["name"]
-				ret_dict["objectDefinitionList"] = tmp_dict["objectDefinitionList"]
-				yield ret_dict
+	def getObjectFile(self):
+		return CompilationUnitFile(self, CompilationUnitFileType.OBJECT)
+
+	@classmethod
+	def getAllNameObjects(cls):
+		for file in glob(os.path.join(cls.getJSONDir(), "*.json")):
+			yield CompilationUnit(os.path.basename(file)[:-5])
+
+	def getUsedObjectsFromScan(self):
+		for usedObject in self.getSourceFile().getUsedObjectList():
+			yield usedObject
+		for usedObject in self.getHeaderFile().getUsedObjectList():
+			yield usedObject
 
 	def getDependencyListFromScan(self):
-		dependencyList = set()
-		for file in [self.getSourceFile(), self.getHeaderFile()]:
-			for match in re.finditer(r"([a-zA-Z0-9_])+", file.getSource()):
-				for nameObject in self.getAllNameObjects():
-					if match in nameObject["objectDefinitionList"]:
-						dependencyList.add(nameObject["name"])
-		return [CompilationUnit(dependency) for dependency in dependencyList]
+		for nameObject in self.getAllNameObjects():
+			for usedObject in self.getUsedObjectsFromScan():
+				if usedObject in self.objectDefinitionList:
+					continue
+				else:
+					if usedObject in nameObject.objectDefinitionList:
+						yield nameObject
 
 	def updateDependencyListFromScan(self, replace=False):
 		scanDependencyList = self.getDependencyListFromScan()
@@ -77,3 +89,25 @@ class CompilationUnit(object):
 			self.dependencyList = scanDependencyList
 		else:
 			self.dependencyList = set(self.dependencyList + scanDependencyList)
+
+	def getDependencyListHeader(self):
+		for dependency in self.getDependencyListFromScan():
+			if getattr(dependency, "hasHeader", False):
+				yield dependency
+
+	def getDependencyListSource(self):
+		for dependency in self.getDependencyListFromScan():
+			if getattr(dependency, "hasSource", False):
+				yield dependency
+	
+	def getFile(self, type):
+		return {
+			CompilationUnitFileType.HEADER : self.getHeaderFile(),
+			CompilationUnitFileType.SOURCE : self.getSourceFile(),
+			CompilationUnitFileType.OBJECT : self.getObjectFile(),
+			CompilationUnitFileType.STATIC : self.getStaticFile(),
+			CompilationUnitFileType.SHARED : self.getSharedFile(),
+		}[type]
+
+	def getMakefileDefinition(self, type):
+		return self.getFile(type).getMakefileDefinition()
