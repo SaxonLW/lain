@@ -78,7 +78,7 @@ class CompilationUnitFile(object):
 		# TODO
 		if self.type == CompilationUnitFileType.HEADER:
 			headerDependency = " ".join([dependency.getHeaderFile().getFileName() for dependency in self.compilationUnit.getDependencyListHeader()])
-			ret = f"{self.getFileName()} : {headerDependency if headerDependency else './makefile'}"
+			ret = f"{self.getFileName()} : {headerDependency if headerDependency else os.path.join('.','makefile')}"
 		elif self.type == CompilationUnitFileType.SOURCE:
 			ret = f"{self.getFileName()} : {self.compilationUnit.getHeaderFile().getFileName()}"
 		elif self.type == CompilationUnitFileType.OBJECT:
@@ -93,3 +93,6 @@ class CompilationUnitFile(object):
 			raise ValueError(f"Unknown type {self.type=}")
 
 		return ret
+
+	def getMakefileFileName(self):
+		return os.path.join(".","make",self.getFileName()+".mk")

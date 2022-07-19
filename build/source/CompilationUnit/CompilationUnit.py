@@ -21,7 +21,8 @@ class CompilationUnit(object):
 			for key, value in self.getJSONDict().items():
 				if key == "dependencyList":
 					self.dependencyList = [CompilationUnit(dependency) for dependency in value]
-				setattr(self, key, value)
+				else:
+					setattr(self, key, value)
 		else:
 			outDict = dict()
 			outDict["hasInclude"] = True
@@ -91,14 +92,23 @@ class CompilationUnit(object):
 			self.dependencyList = set(self.dependencyList + scanDependencyList)
 
 	def getDependencyListHeader(self):
-		for dependency in self.getDependencyListFromScan():
+		for dependency in self.getDependencyList():
 			if getattr(dependency, "hasHeader", False):
 				yield dependency
 
 	def getDependencyListSource(self):
-		for dependency in self.getDependencyListFromScan():
+		for dependency in self.getDependencyList():
 			if getattr(dependency, "hasSource", False):
 				yield dependency
+
+	def getDependencyList(self):
+		for scanDependency in self.getDependencyListFromScan():
+			if scanDependency.name in [dependency.name for dependency in self.__dict__.get("dependencyList",list())]:
+				continue
+			else:
+				yield scanDependency
+		for dependency in self.__dict__.get("dependencyList",list()):
+			yield dependency
 	
 	def getFile(self, type):
 		return {
@@ -111,3 +121,6 @@ class CompilationUnit(object):
 
 	def getMakefileDefinition(self, type):
 		return self.getFile(type).getMakefileDefinition()
+
+	def getMakefileFileName(self, type):
+		return self.getFile(type).getMakefileFileName()
