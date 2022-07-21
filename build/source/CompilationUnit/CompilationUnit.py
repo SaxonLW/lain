@@ -27,8 +27,17 @@ class CompilationUnit(object):
 			outDict = dict()
 			outDict["hasInclude"] = True
 			outDict["name"] = self.name
+			outDict["newFlag"] = True
 			for key, value in outDict.items():
 				setattr(self, key, value)
+
+	def createJSON(self):
+		with open(self.nameToJSONPath(), "w") as f:
+			tmpDict = self.__dict__
+			tmpDict.pop("newFlag",None)
+			json.dump(tmpDict,f)
+		return self
+			
 
 	def getJSONDict(self):
 		with open(self.nameToJSONPath()) as f:

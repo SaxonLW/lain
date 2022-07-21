@@ -59,15 +59,22 @@ class CompilationUnitFile(object):
 		
 	def getSource(self):
 		if self.type in (CompilationUnitFileType.HEADER, CompilationUnitFileType.SOURCE):
-			with open(self.getFileName()) as f:
-				return f.read()
+			if isfile(self.getFileName()):
+				with open(self.getFileName()) as f:
+					return f.read()
+			else:
+				return None
 		else:
 			return None
 
 	def getUsedObjectList(self):
 		source =  self.getSource()
-		for match in self.objectRE.finditer(source):
-			yield source[match.start():match.end()]
+		if source is None:
+			return
+			yield
+		else:
+			for match in self.objectRE.finditer(source):
+				yield source[match.start():match.end()]
 
 	def checkForObjectInSource(self, object:str):
 		return object in self.getUsedObjectList()
@@ -75,7 +82,6 @@ class CompilationUnitFile(object):
 	def getMakefileDefinition(self):
 		ret = None
 		
-		# TODO
 		if self.type == CompilationUnitFileType.HEADER:
 			headerDependency = " ".join([dependency.getHeaderFile().getFileName() for dependency in self.compilationUnit.getDependencyListHeader()])
 			ret = f"{self.getFileName()} : {headerDependency if headerDependency else os.path.join('.','makefile')}"
@@ -95,4 +101,24 @@ class CompilationUnitFile(object):
 		return ret
 
 	def getMakefileFileName(self):
-		return os.path.join(".","make",self.getFileName()+".mk")
+		ret = None
+		if self.type == CompilationUnitFileType.STATIC:
+			makefileName = ".".join(self.getFileName().split(".")[:-1]) + ".static_ext"
+			ret = os.path.join(".","make",makefileName+".mk")
+		elif self.type == CompilationUnitFileType.SHARED:
+			makefileName = ".".join(self.getFileName().split(".")[:-1]) + ".shared_ext"
+			ret = os.path.join(".","make",makefileName+".mk")
+		else:
+			ret = os.path.join(".","make",self.getFileName()+".mk")
+		return ret
+
+	def getBoilerPlate(self):
+		ret = None
+		if self.type == CompilationUnitFileType.HEADER:
+			headerGuard = os.path.basename(self.getFileName()).replace(".","_").upper()
+			ret = f"""#ifndef {headerGuard}{linesep}#define {headerGuard}{linesep}TODO - DEFINE {self.compilationUnit.name.replace('.','_')}{linesep}#endif /*{headerGuard}*/"""
+		elif self.type == CompilationUnitFileType.SOURCE:
+			ret = f'''#include "{os.path.basename(self.compilationUnit.getHeaderFile().getFileName())}"{linesep}{linesep}TODO - IMPLEMENT {self.compilationUnit.name.replace(".","_")}'''
+		else:
+			raise ValueError(f"Boiler Plate not available for {self.type}")
+		return ret
