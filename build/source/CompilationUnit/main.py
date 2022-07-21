@@ -38,7 +38,7 @@ def scriptNewCompilationUnit():
 def makeRefreshAll():
 	for cu in CompilationUnit.CompilationUnit.getAllNameObjects():
 		printMakefileFile(cu.getHeaderFile())
-		if cu.hasSource:
+		if cu.__dict__.get("hasSource",False):
 			printMakefileFile(cu.getSourceFile())
 			printMakefileFile(cu.getObjectFile())
 			printMakefileFile(cu.getSharedFile())
