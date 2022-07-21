@@ -84,17 +84,17 @@ class CompilationUnitFile(object):
 		
 		if self.type == CompilationUnitFileType.HEADER:
 			headerDependency = " ".join([dependency.getHeaderFile().getFileName() for dependency in self.compilationUnit.getDependencyListHeader()])
-			ret = f"{self.getFileName()} : {headerDependency if headerDependency else os.path.join('.','makefile')}"
+			ret = f"{self.getFileName()} : {headerDependency if headerDependency else ''}\n\nINCLUDE_TARGETS+={self.getFileName()}"
 		elif self.type == CompilationUnitFileType.SOURCE:
-			ret = f"{self.getFileName()} : {self.compilationUnit.getHeaderFile().getFileName()}"
+			ret = f"{self.getFileName()} : {self.compilationUnit.getHeaderFile().getFileName()}\n\nSOURCE_TARGETS+={self.getFileName()}"
 		elif self.type == CompilationUnitFileType.OBJECT:
-			ret = f"{self.getFileName()} : {self.compilationUnit.getSourceFile().getFileName()}{linesep}\t$(call compile_object,$^,$@,,)"
+			ret = f"{self.getFileName()} : {self.compilationUnit.getSourceFile().getFileName()}{linesep}\t$(call compile_object,$^,$@,,)\n\nOBJECT_TARGETS+={self.getFileName()}"
 		elif self.type == CompilationUnitFileType.STATIC:
 			sourceDependency = " ".join([dependency.getSourceFile().getFileName() for dependency in self.compilationUnit.getDependencyListSource()])
-			ret = f"{self.getFileName()} : {sourceDependency}{linesep}\t$(call link_static,$^,$@)"
+			ret = f"{self.getFileName()} : {sourceDependency}{linesep}\t$(call link_static,$^,$@)\n\nSTATIC_TARGETS+={self.getFileName()}"
 		elif self.type == CompilationUnitFileType.SHARED:
 			sourceDependency = " ".join([dependency.getSourceFile().getFileName() for dependency in self.compilationUnit.getDependencyListSource()])
-			ret = f"{self.getFileName()} : {sourceDependency}{linesep}\t$(call compile_shared,$^,$@,,)"
+			ret = f"{self.getFileName()} : {sourceDependency}{linesep}\t$(call compile_shared,$^,$@,,)\n\nSHARED_TARGETS+={self.getFileName()}"
 		else:
 			raise ValueError(f"Unknown type {self.type=}")
 

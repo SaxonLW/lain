@@ -102,7 +102,7 @@ class CompilationUnit(object):
 
 	def getDependencyListHeader(self):
 		for dependency in self.getDependencyList():
-			if getattr(dependency, "hasHeader", False):
+			if getattr(dependency, "hasInclude", False):
 				yield dependency
 
 	def getDependencyListSource(self):

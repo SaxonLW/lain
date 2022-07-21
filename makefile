@@ -6,12 +6,13 @@ BUILD_DIR=build/
 BUILD_SOURCE_DIR=$(BUILD_DIR)source/
 BUILD_BIN_DIR=$(BUILD_DIR)bin/
 
-SOURCE_DIR=source/
-INCLUDE_DIR=include/
-OBJECT_DIR=object/
-SHARED_DIR=shared/
-STATIC_DIR=static/
-TEST_DIR=test/
+SOURCE_DIR=./source
+INCLUDE_DIR=./include
+OBJECT_DIR=./object
+SHARED_DIR=./shared
+STATIC_DIR=./static
+TEST_DIR=./test
+MAKE_DIR=./make
 
 CC_FLAGS+=-Wall -Wextra -std=c89 -pedantic -Wmissing-prototypes -Wstrict-prototypes -Wold-style-definition -O3
 CC_NOSTDINC_FLAG+=-nostdinc
@@ -46,54 +47,35 @@ BUILD_TARGETS+=$(INCLUDE_DIR)lain.c.type.size.h
 
 # INCLUDE
 
-include $(BUILD_SOURCE_DIR)make/include/*.mk
+include $(MAKE_DIR)/include/*.mk
 
 # SOURCE
 
-include $(BUILD_SOURCE_DIR)make/source/*.mk
+include $(MAKE_DIR)/source/*.mk
 
 # OBJECT
 
-include $(BUILD_SOURCE_DIR)make/object/*.mk
+include $(MAKE_DIR)/object/*.mk
 
 # STATIC
 
-#include $(BUILD_SOURCE_DIR)make/static/*.mk
+#include $(MAKE_DIR)/static/*.mk
 
 # SHARED
 
-#include $(BUILD_SOURCE_DIR)make/shared/*.mk
+#include $(MAKE_DIR)/shared/*.mk
 
 # SHARED
 
-#include $(BUILD_SOURCE_DIR)make/test/*.mk
+#include $(MAKE_DIR)/test/*.mk
 
-BUILD_TARGETS+=
-.PHONY : build
-build:$(BUILD_TARGETS)
+FORCE :
 
-OBJECT_TARGETS+=
-.PHONY : object
-object:$(OBJECT_TARGETS)
-
-STATIC_TARGETS+=
-.PHONY : static
-static:$(STATIC_TARGETS)
-
-SHARED_TARGETS+=
-.PHONY : shared
-shared:$(SHARED_TARGETS)
-
-TEST_TARGETS+=
-.PHONY : test
-test:$(TEST_TARGETS)
-
-.PHONY : all
-all:static object build shared test
+all:$(INCLUDE_TARGETS) $(SOURCE_TARGETS) $(OBJECT_TARGETS) $(STATIC_TARGETS) $(SHARED_TARGETS)
 
 .PHONY : clean
 clean:
-	-rm $(OBJECT_DIR)*
-	-rm $(STATIC_DIR)*
-	-rm $(SHARED_DIR)*
-	-rm $(TEST_DIR)*
+	-rm $(OBJECT_DIR)
+	-rm $(STATIC_DIR)
+	-rm $(SHARED_DIR)
+	-rm $(TEST_DIR)
