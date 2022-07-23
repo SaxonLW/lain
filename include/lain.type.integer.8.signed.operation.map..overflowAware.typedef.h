@@ -1,0 +1,8 @@
+#ifndef LAIN_TYPE_INTEGER_8_SIGNED_OPERATION_MAP__OVERFLOWAWARE_TYPEDEF_H
+#define LAIN_TYPE_INTEGER_8_SIGNED_OPERATION_MAP__OVERFLOWAWARE_TYPEDEF_H
+
+#include "lain.type.integer.8.signed.operation..overflowAware.return.typedef.h"
+
+typedef lain_type_integer_8_signed_operation__overflowAware_return lain_type_integer_8_signed_operation_map__overflowAware(lain_type_integer_8_signed);
+
+#endif /*LAIN_TYPE_INTEGER_8_SIGNED_OPERATION_MAP__OVERFLOWAWARE_TYPEDEF_H*/

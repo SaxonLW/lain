@@ -96,7 +96,7 @@ class CompilationUnitFile(object):
 			sourceDependency = " ".join([dependency.getSourceFile().getFileName() for dependency in self.compilationUnit.getDependencyListSource()])
 			ret = f"{self.getFileName()} : {sourceDependency}{linesep}\t$(call compile_shared,$^,$@,,)\n\nSHARED_TARGETS+={self.getFileName()}"
 		else:
-			raise ValueError(f"Unknown type {self.type=}")
+			raise ValueError(f"Unknown type {self.type}")
 
 		return ret
 

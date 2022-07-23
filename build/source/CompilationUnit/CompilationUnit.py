@@ -87,7 +87,7 @@ class CompilationUnit(object):
 	def getDependencyListFromScan(self):
 		for nameObject in self.getAllNameObjects():
 			for usedObject in self.getUsedObjectsFromScan():
-				if usedObject in self.objectDefinitionList:
+				if usedObject in self.__dict__.get("objectDefinitionList",list()):
 					continue
 				else:
 					if usedObject in nameObject.objectDefinitionList:

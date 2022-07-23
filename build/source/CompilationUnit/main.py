@@ -19,6 +19,7 @@ def scriptNewCompilationUnit():
 		if result.lower() in ["y","yes"]:
 			
 			print("Creating Header")
+			headerFile = cu.getHeaderFile()
 			printBoilerPlateFile(headerFile)
 
 			cuHasSourceInput = input("Got sauce mate?")

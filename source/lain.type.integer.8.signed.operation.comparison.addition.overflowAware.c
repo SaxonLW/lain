@@ -10,7 +10,7 @@ lain_type_integer_8_signed_operation__overflowAware_return lain_type_integer_8_s
             (
                 left > 0
                     ?
-                ((LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_HIGH-left) >= right)
+                ((LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_HIGH - left) >= right)
                     :
                 ((LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW - left) <= right)
             )
