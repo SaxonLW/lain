@@ -6,31 +6,27 @@ lain_type_integer_8_signed_operation__overflowAware_return lain_type_integer_8_s
 	return (
 		(
 			(/*Edge Cases*/
-				!((left == LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW) || (right == LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW) || (left == 0) || (right == 0))
+				!((left == LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW)|| (left == 0) || (right == 0) || (right == LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW))
 			)
 				?
 			(
-				((left > 0) == (right > 0))
-					?
-				(/*Approach Positive Infinity*/
-					(
+				(
+					((left > 0) == (right > 0))
+						?
+					(/*Approach Positive Infinity*/
 						LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_HIGH
 							/
 						(left > 0 ? left : -1*left)
-					) 
-						>= 
-					(right > 0 ? right : -1*right)
-				)
-					:
-				(/*Approach Negative Infinity*/
-					(
+					)
+						:
+					(/*Approach Negative Infinity*/
 						LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW
 							/
 						(left < 0 ? left : -1*left)
 					)
-						>=
-					(right > 0 ? right : -1*right)
 				)
+					>=
+				(right > 0 ? right : -1*right)
 			)
 				:
 			(
