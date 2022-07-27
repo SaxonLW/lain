@@ -6,7 +6,7 @@ lain_type_integer_8_signed_operation__overflowAware_return lain_type_integer_8_s
     return (
         (
             ((left > 0) != (right > 0))
-                &&
+                ||
             (
                 left > 0
                     ?
