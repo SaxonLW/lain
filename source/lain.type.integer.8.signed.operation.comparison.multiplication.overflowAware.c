@@ -6,7 +6,7 @@ lain_type_integer_8_signed_operation__overflowAware_return lain_type_integer_8_s
 	return (
 		(
 			(/*Edge Cases*/
-				!((left == LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW)|| (left == 0) || (right == 0) || (right == LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW))
+				!((left == LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW) || (left == 0) || (right == 0) || (right == LAIN_TYPE_INTEGER_8_SIGNED_CONSTANTS_BOUNDRY_LOW))
 			)
 				?
 			(
