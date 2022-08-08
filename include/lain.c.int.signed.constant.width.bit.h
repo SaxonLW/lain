@@ -1,0 +1,4 @@
+#ifndef LAIN_C_INT_SIGNED_CONSTANT_WIDTH_BIT_H
+#define LAIN_C_INT_SIGNED_CONSTANT_WIDTH_BIT_H
+TODO - DEFINE lain_c_int_signed_constant_width_bit
+#endif /*LAIN_C_INT_SIGNED_CONSTANT_WIDTH_BIT_H*/

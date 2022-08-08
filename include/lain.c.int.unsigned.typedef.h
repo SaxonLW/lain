@@ -1,0 +1,4 @@
+#ifndef LAIN_C_INT_UNSIGNED_TYPEDEF_H
+#define LAIN_C_INT_UNSIGNED_TYPEDEF_H
+TODO - DEFINE lain_c_int_unsigned_typedef
+#endif /*LAIN_C_INT_UNSIGNED_TYPEDEF_H*/
