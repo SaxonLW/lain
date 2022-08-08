@@ -7,7 +7,6 @@ from glob import glob
 from copy import deepcopy
 import re
 from enum import Enum
-import pycparser
 
 class CompilationUnitFileType(Enum):
 	HEADER=1

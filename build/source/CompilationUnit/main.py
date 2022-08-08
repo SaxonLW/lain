@@ -1,4 +1,5 @@
 import CompilationUnit
+import CompilationUnitInteger
 
 def printBoilerPlateFile(file):
 	if file.type in [CompilationUnit.CompilationUnitFileType.HEADER, CompilationUnit.CompilationUnitFileType.SOURCE]:
@@ -69,5 +70,9 @@ if __name__ == "__main__":
 			makeRefreshOne()
 		else:
 			print("dunno about that")
+	elif response.lower() == "integer":
+		response = input("What name\n")
+		newInt = CompilationUnitInteger.CompilationUnitInteger(response)
+		newInt.createFiles()
 	else:
 		print("dunno about that")

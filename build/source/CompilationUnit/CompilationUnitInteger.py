@@ -246,7 +246,7 @@ IntegerCompilationUnits[compUnitName]["hasInclude"] = True
 
 
 class CompilationUnitInteger(object):
-	def __init__(name:str):
+	def __init__(self, name:str):
 		self.name = name
 		self.CompilationUnitDict = dict()
 		for key, value in IntegerCompilationUnits.items():
