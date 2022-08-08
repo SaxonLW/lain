@@ -262,19 +262,19 @@ class CompilationUnitInteger(object):
 		for CU in self.getCompilationUnitList():
 			CU.createJSON()
 	def createFiles(self):
-		for CU in self.getCompilationUnitList():
+		for CU in self.getCompilationUnitList():		
+			# Make
+			for file in [CU.getHeaderFile(), CU.getSourceFile(), CU.getObjectFile(), CU.getStaticFile(), CU.getSharedFile()]:
+				with open(file.getMakefileFileName(),"w") as f:
+					f.write(file.getMakefileDefinition())
 			# Source
 			headerFile = CU.getHeaderFile()
 			with open(headerFile.getFileName(), "w") as headerFileHandle:
 				headerFileHandle.write(headerFile.getBoilerPlate())
-			if CU.get("hasSource",False):
+			if CU.__dict__.get("hasSource",False):
 				continue
 			sourceFile = CU.getSourceFile()
 			with open(sourceFile.getFileName(), "w") as sourceFileHandle:
 				sourceFileHandle.write(sourceFile.getBoilerPlate())
 
-			# Make
-			for file in [headerFile, sourceFile, CU.getObjectFile(), CU.getStaticFile(), CU.getSharedFile()]:
-				with open(file.getMakefileFileName(),"w") as f:
-					f.write(file.getMakefileDefinition())
 			
