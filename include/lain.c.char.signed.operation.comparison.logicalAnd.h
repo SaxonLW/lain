@@ -1,4 +1,7 @@
 #ifndef LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_LOGICALAND_H
 #define LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_LOGICALAND_H
-TODO - DEFINE lain_c_char_signed_operation_comparison_logicalAnd
+
+#include "lain.c.char.signed.operation.comparison.typedef.h"
+
+lain_c_char_signed_operation_comparison lain_c_char_signed_operation_comparison_logicalAnd
 #endif /*LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_LOGICALAND_H*/

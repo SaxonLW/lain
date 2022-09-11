@@ -1,4 +1,7 @@
 #ifndef LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_NOTEQUALTO_H
 #define LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_NOTEQUALTO_H
-TODO - DEFINE lain_c_char_signed_operation_comparison_notEqualTo
+
+#include "lain.c.char.signed.operation.comparison.typedef.h"
+
+lain_c_char_signed_operation_comparison lain_c_char_signed_operation_comparison_notEqualTo;
 #endif /*LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_NOTEQUALTO_H*/

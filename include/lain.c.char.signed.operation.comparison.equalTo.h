@@ -1,4 +1,7 @@
 #ifndef LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_EQUALTO_H
 #define LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_EQUALTO_H
-TODO - DEFINE lain_c_char_signed_operation_comparison_equalTo
+
+#include "lain.c.char.signed.operation.comparison.typedef.h"
+
+lain_c_char_signed_operation_comparison lain_c_char_signed_operation_comparison_equalTo
 #endif /*LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_EQUALTO_H*/

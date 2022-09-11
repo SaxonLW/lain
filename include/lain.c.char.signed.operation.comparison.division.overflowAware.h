@@ -1,4 +1,7 @@
 #ifndef LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_DIVISION_OVERFLOWAWARE_H
 #define LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_DIVISION_OVERFLOWAWARE_H
-TODO - DEFINE lain_c_char_signed_operation_comparison_division_overflowAware
+
+#include "lain.c.char.signed.operation.comparison..overflowAware.typedef.h"
+
+lain_c_char_signed_operation_comparison__overflowAware lain_c_char_signed_operation_comparison_division_overflowAware;
 #endif /*LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_DIVISION_OVERFLOWAWARE_H*/

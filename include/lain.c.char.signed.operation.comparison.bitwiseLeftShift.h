@@ -1,4 +1,7 @@
 #ifndef LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_BITWISELEFTSHIFT_H
 #define LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_BITWISELEFTSHIFT_H
-TODO - DEFINE lain_c_char_signed_operation_comparison_bitwiseLeftShift
+
+#include "lain.c.char.signed.operation.comparison.typedef.h"
+
+lain_c_char_signed_operation_comparison lain_c_char_signed_operation_comparison_bitwiseLeftShift;
 #endif /*LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_BITWISELEFTSHIFT_H*/

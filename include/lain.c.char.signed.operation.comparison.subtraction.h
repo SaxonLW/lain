@@ -1,4 +1,7 @@
 #ifndef LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_SUBTRACTION_H
 #define LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_SUBTRACTION_H
-TODO - DEFINE lain_c_char_signed_operation_comparison_subtraction
+
+#include "lain.c.char.signed.operation.comparison.typedef.h"
+
+lain_c_char_signed_operation_comparison lain_c_char_signed_operation_comparison_subtraction;
 #endif /*LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON_SUBTRACTION_H*/
