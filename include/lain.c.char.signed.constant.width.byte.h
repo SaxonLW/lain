@@ -1,4 +1,4 @@
 #ifndef LAIN_C_CHAR_SIGNED_CONSTANT_WIDTH_BYTE_H
 #define LAIN_C_CHAR_SIGNED_CONSTANT_WIDTH_BYTE_H
-TODO - DEFINE lain_c_char_signed_constant_width_byte
+#define lain_c_char_signed_constant_width_byte 1
 #endif /*LAIN_C_CHAR_SIGNED_CONSTANT_WIDTH_BYTE_H*/

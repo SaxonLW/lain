@@ -1,4 +1,7 @@
 #ifndef LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON__OVERFLOWAWARE_TYPEDEF_H
 #define LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON__OVERFLOWAWARE_TYPEDEF_H
-TODO - DEFINE lain_c_char_signed_operation_comparison__overflowAware_typedef
+
+#include "lain.c.char.signed.operation..overflowAware.return.typedef.h"
+
+typedef lain_c_char_signed_operation__overflowAware_return (lain_c_char_signed_operation_comparison__overflowAware)(lain_c_char_signed, lain_c_char_signed);
 #endif /*LAIN_C_CHAR_SIGNED_OPERATION_COMPARISON__OVERFLOWAWARE_TYPEDEF_H*/

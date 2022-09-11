@@ -1,4 +1,4 @@
 #ifndef LAIN_C_CHAR_SIGNED_CONSTANT_BOUNDRY_LOWER_H
 #define LAIN_C_CHAR_SIGNED_CONSTANT_BOUNDRY_LOWER_H
-TODO - DEFINE lain_c_char_signed_constant_boundry_lower
+#define lain_c_char_signed_constant_boundry_lower -128
 #endif /*LAIN_C_CHAR_SIGNED_CONSTANT_BOUNDRY_LOWER_H*/
