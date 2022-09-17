@@ -1,8 +1,0 @@
-#ifndef LAIN_C_CHAR_SIGNED_OPERATION__OVERFLOWAWARE_OPERATION_CONSTRUCT_H
-#define LAIN_C_CHAR_SIGNED_OPERATION__OVERFLOWAWARE_OPERATION_CONSTRUCT_H
-
-#include "lain.c.char.signed.operation..overflowAware.operation.construct.typedef.h"
-
-lain_c_char_signed_operation__overflowAware_operation_construct_type lain_c_char_signed_operation__overflowAware_operation_construct;
-
-#endif /*LAIN_C_CHAR_SIGNED_OPERATION__OVERFLOWAWARE_OPERATION_CONSTRUCT_H*/

@@ -5,7 +5,7 @@ import json
 from glob import glob
 import re
 
-from CompilationUnitFile import CompilationUnitFile, CompilationUnitFileType
+import CompilationUnitFile
 
 class CompilationUnit(object):
 	def __init__(self, name):
@@ -59,19 +59,19 @@ class CompilationUnit(object):
 		return os.path.join(self.getJSONDir(), f"{self.name}.json")
 
 	def getHeaderFile(self):
-		return CompilationUnitFile(self, CompilationUnitFileType.HEADER)
+		return CompilationUnitFile.CompilationUnitFile(self, CompilationUnitFile.CompilationUnitFileType.HEADER)
 
 	def getSourceFile(self):
-		return CompilationUnitFile(self, CompilationUnitFileType.SOURCE)
+		return CompilationUnitFile.CompilationUnitFile(self, CompilationUnitFile.CompilationUnitFileType.SOURCE)
 
 	def getSharedFile(self):
-		return CompilationUnitFile(self, CompilationUnitFileType.SHARED)
+		return CompilationUnitFile.CompilationUnitFile(self, CompilationUnitFile.CompilationUnitFileType.SHARED)
 
 	def getStaticFile(self):
-		return CompilationUnitFile(self, CompilationUnitFileType.STATIC)
+		return CompilationUnitFile.CompilationUnitFile(self, CompilationUnitFile.CompilationUnitFileType.STATIC)
 
 	def getObjectFile(self):
-		return CompilationUnitFile(self, CompilationUnitFileType.OBJECT)
+		return CompilationUnitFile.CompilationUnitFile(self, CompilationUnitFile.CompilationUnitFileType.OBJECT)
 
 	@classmethod
 	def getAllNameObjects(cls):
@@ -121,12 +121,12 @@ class CompilationUnit(object):
 	
 	def getFile(self, type):
 		return {
-			CompilationUnitFileType.HEADER : self.getHeaderFile(),
-			CompilationUnitFileType.SOURCE : self.getSourceFile(),
-			CompilationUnitFileType.OBJECT : self.getObjectFile(),
-			CompilationUnitFileType.STATIC : self.getStaticFile(),
-			CompilationUnitFileType.SHARED : self.getSharedFile(),
-		}[type]
+			CompilationUnitFile.CompilationUnitFileType.HEADER : self.getHeaderFile,
+			CompilationUnitFile.CompilationUnitFileType.SOURCE : self.getSourceFile,
+			CompilationUnitFile.CompilationUnitFileType.OBJECT : self.getObjectFile,
+			CompilationUnitFile.CompilationUnitFileType.STATIC : self.getStaticFile,
+			CompilationUnitFile.CompilationUnitFileType.SHARED : self.getSharedFile,
+		}[type]()
 
 	def getMakefileDefinition(self, type):
 		return self.getFile(type).getMakefileDefinition()
